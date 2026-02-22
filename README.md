@@ -212,9 +212,7 @@ Revenant:Window({ Text = "Hello" })
 
 # Notes
 
-• Automatically removes existing `Revenant` UI on load  
-• Asset caching supported  
-• Designed for exploit or local UI environments  
+• Designed for exploit's or local UI environments  
 
 ---
 
