@@ -1,6 +1,6 @@
 local library = {}
 library.Flags = {}
-library.DefaultColor = Color3.fromRGB(56, 207, 154)
+library.DefaultColor = Color3.fromRGB(0, 0, 0)
 
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
@@ -76,7 +76,7 @@ function library:Notification(NotificationInfo)
     notificationText.TextColor3 = Color3.fromRGB(214, 214, 214)
     notificationText.TextSize = 14
     notificationText.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    notificationText.BackgroundTransparency = 0.3
+    notificationText.BackgroundTransparency = 0.75
     notificationText.BorderSizePixel = 0
     notificationText.Position = UDim2.fromScale(0, 0.954)
     notificationText.Size = UDim2.fromOffset(0, 38)
@@ -101,7 +101,7 @@ function library:Notification(NotificationInfo)
     innerFrame.Name = "InnerFrame"
     innerFrame.AnchorPoint = Vector2.new(0, 1)
     innerFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-    innerFrame.BackgroundTransparency = 0.3
+    innerFrame.BackgroundTransparency = 0.75
     innerFrame.BorderSizePixel = 0
     innerFrame.Position = UDim2.fromScale(0, 1)
     innerFrame.Size = UDim2.new(1, 0, 0, 3)
@@ -165,7 +165,7 @@ function library:Window(Info)
     local topbar = Instance.new("Frame")
     topbar.Name = "Topbar"
     topbar.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
-    topbar.BackgroundTransparency = 0.3
+    topbar.BackgroundTransparency = 0.75
     topbar.Position = UDim2.fromScale(Pos, 0.1)
     topbar.Size = UDim2.fromOffset(225, 38)
     topbar.Parent = revenant
@@ -216,7 +216,7 @@ function library:Window(Info)
     local backgroundFrame = Instance.new("Frame")
     backgroundFrame.Name = "BackgroundFrame"
     backgroundFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-    backgroundFrame.BackgroundTransparency = 0.3
+    backgroundFrame.BackgroundTransparency = 0.75
     backgroundFrame.BorderSizePixel = 0
     backgroundFrame.ClipsDescendants = false
     backgroundFrame.Position = UDim2.fromScale(0, 1)
@@ -232,7 +232,7 @@ function library:Window(Info)
     fixLine.Name = "FixLine"
     fixLine.AnchorPoint = Vector2.new(0.5, 0)
     fixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-    fixLine.BackgroundTransparency = 0.3
+    fixLine.BackgroundTransparency = 0.75
     fixLine.BorderSizePixel = 0
     fixLine.Position = UDim2.fromScale(0.5, 0)
     fixLine.Size = UDim2.fromOffset(225, 2)
@@ -277,7 +277,7 @@ function library:Window(Info)
         local button = Instance.new("Frame")
         button.Name = "Button"
         button.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        button.BackgroundTransparency = 0.3
+        button.BackgroundTransparency = 0.75
         button.Size = UDim2.fromOffset(225, 38)
         button.Parent = itemContainer
 
@@ -290,7 +290,7 @@ function library:Window(Info)
         fixLine1.Name = "FixLine"
         fixLine1.AnchorPoint = Vector2.new(0.5, 1)
         fixLine1.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        fixLine1.BackgroundTransparency = 0.3
+        fixLine1.BackgroundTransparency = 0.75
         fixLine1.BorderSizePixel = 0
         fixLine1.Position = UDim2.fromScale(0.5, 0.0526)
         fixLine1.Size = UDim2.fromOffset(225, 4)
@@ -323,16 +323,16 @@ function library:Window(Info)
 
         button.MouseEnter:Connect(function()
             fixLine1.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            fixLine1.BackgroundTransparency = 0.3
+            fixLine1.BackgroundTransparency = 0.75
             button.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            button.BackgroundTransparency = 0.3
+            button.BackgroundTransparency = 0.75
         end)
 
         button.MouseLeave:Connect(function()
             fixLine1.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            fixLine1.BackgroundTransparency = 0.3
+            fixLine1.BackgroundTransparency = 0.75
             button.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            button.BackgroundTransparency = 0.3
+            button.BackgroundTransparency = 0.75
         end)
 
         buttonTextButton.MouseButton1Click:Connect(function()
@@ -348,7 +348,7 @@ function library:Window(Info)
         local prompt = Instance.new("Frame")
         prompt.Name = "Prompt"
         prompt.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        prompt.BackgroundTransparency = 0.3
+        prompt.BackgroundTransparency = 0.75
         prompt.Size = UDim2.fromOffset(225, 38)
         prompt.Parent = itemContainer
 
@@ -361,7 +361,7 @@ function library:Window(Info)
         promptFixLine.Name = "PromptFixLine"
         promptFixLine.AnchorPoint = Vector2.new(0.5, 1)
         promptFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        promptFixLine.BackgroundTransparency = 0.3
+        promptFixLine.BackgroundTransparency = 0.75
         promptFixLine.BorderSizePixel = 0
         promptFixLine.Position = UDim2.fromScale(0.5, 0.0526)
         promptFixLine.Size = UDim2.fromOffset(225, 4)
@@ -402,16 +402,16 @@ function library:Window(Info)
 
         prompt.MouseEnter:Connect(function()
             promptFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            promptFixLine.BackgroundTransparency = 0.3
+            promptFixLine.BackgroundTransparency = 0.75
             prompt.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            prompt.BackgroundTransparency = 0.3
+            prompt.BackgroundTransparency = 0.75
         end)
 
         prompt.MouseLeave:Connect(function()
             promptFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            promptFixLine.BackgroundTransparency = 0.3
+            promptFixLine.BackgroundTransparency = 0.75
             prompt.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            prompt.BackgroundTransparency = 0.3
+            prompt.BackgroundTransparency = 0.75
         end)
 
         cancelPromptButton.MouseButton1Click:Connect(function()
@@ -434,7 +434,7 @@ function library:Window(Info)
         local label = Instance.new("Frame")
         label.Name = "Label"
         label.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        label.BackgroundTransparency = 0.3
+        label.BackgroundTransparency = 0.75
         label.Size = UDim2.fromOffset(225, 38)
         label.Parent = itemContainer
 
@@ -447,7 +447,7 @@ function library:Window(Info)
         labelFixLine.Name = "LabelFixLine"
         labelFixLine.AnchorPoint = Vector2.new(0.5, 1)
         labelFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        labelFixLine.BackgroundTransparency = 0.3
+        labelFixLine.BackgroundTransparency = 0.75
         labelFixLine.BorderSizePixel = 0
         labelFixLine.Position = UDim2.fromScale(0.5, 0.0526)
         labelFixLine.Size = UDim2.fromOffset(225, 4)
@@ -468,16 +468,16 @@ function library:Window(Info)
 
         label.MouseEnter:Connect(function()
             labelFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            labelFixLine.BackgroundTransparency = 0.3
+            labelFixLine.BackgroundTransparency = 0.75
             label.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            label.BackgroundTransparency = 0.3
+            label.BackgroundTransparency = 0.75
         end)
 
         label.MouseLeave:Connect(function()
             labelFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            labelFixLine.BackgroundTransparency = 0.3
+            labelFixLine.BackgroundTransparency = 0.75
             label.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            label.BackgroundTransparency = 0.3
+            label.BackgroundTransparency = 0.75
         end)
 
         function insidelabel:Set(InsideInfo)
@@ -506,7 +506,7 @@ function library:Window(Info)
         local toggle = Instance.new("Frame")
         toggle.Name = "Toggle"
         toggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        toggle.BackgroundTransparency = 0.3
+        toggle.BackgroundTransparency = 0.75
         toggle.Size = UDim2.fromOffset(225, 38)
         toggle.Parent = itemContainer
 
@@ -519,7 +519,7 @@ function library:Window(Info)
         fixLineToggle.Name = "FixLine"
         fixLineToggle.AnchorPoint = Vector2.new(0.5, 1)
         fixLineToggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        fixLineToggle.BackgroundTransparency = 0.3
+        fixLineToggle.BackgroundTransparency = 0.75
         fixLineToggle.BorderSizePixel = 0
         fixLineToggle.Position = UDim2.fromScale(0.5, 0.0526)
         fixLineToggle.Size = UDim2.fromOffset(225, 4)
@@ -553,7 +553,7 @@ function library:Window(Info)
         local outerFrame = Instance.new("Frame")
         outerFrame.Name = "OuterFrame"
         outerFrame.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-        outerFrame.BackgroundTransparency = 0.3
+        outerFrame.BackgroundTransparency = 0.75
         outerFrame.BorderSizePixel = 0
         outerFrame.Position = UDim2.fromScale(0.782, 0.263)
         outerFrame.Size = UDim2.fromOffset(38, 17)
@@ -578,20 +578,20 @@ function library:Window(Info)
 
         innerFrame.Position = Info.Default and UDim2.new(0, 22,0, 2) or UDim2.new(0, 3,0, 2)
         outerFrame.BackgroundColor3 = Info.Default and library.DefaultColor or Color3.fromRGB(62, 62, 62)
-        outerFrame.BackgroundTransparency = Info.Default and 0 or 0.3
+        outerFrame.BackgroundTransparency = Info.Default and 0 or 0.75
 
         toggle.MouseEnter:Connect(function()
             fixLineToggle.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            fixLineToggle.BackgroundTransparency = 0.3
+            fixLineToggle.BackgroundTransparency = 0.75
             toggle.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            toggle.BackgroundTransparency = 0.3
+            toggle.BackgroundTransparency = 0.75
         end)
 
         toggle.MouseLeave:Connect(function()
             fixLineToggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            fixLineToggle.BackgroundTransparency = 0.3
+            fixLineToggle.BackgroundTransparency = 0.75
             toggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            toggle.BackgroundTransparency = 0.3
+            toggle.BackgroundTransparency = 0.75
         end)
 
         function insidetoggle:Set(ToggleInfo)
@@ -604,7 +604,7 @@ function library:Window(Info)
 
             TweenService:Create(innerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{Position = ToggleInfo.Bool and UDim2.new(0, 22,0, 2) or UDim2.new(0, 3,0, 2)}):Play()
             TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundColor3 = ToggleInfo.Bool and library.DefaultColor or Color3.fromRGB(62, 62, 62)}):Play()
-            TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundTransparency = ToggleInfo.Bool and 0 or 0.3}):Play()
+            TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundTransparency = ToggleInfo.Bool and 0 or 0.75}):Play()
         end
 
         toggleTextButton.MouseButton1Click:Connect(function()
@@ -615,7 +615,7 @@ function library:Window(Info)
 
             TweenService:Create(innerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{Position = Toggled and UDim2.new(0, 22,0, 2) or UDim2.new(0, 3,0, 2)}):Play()
             TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundColor3 = Toggled and library.DefaultColor or Color3.fromRGB(62, 62, 62)}):Play()
-            TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundTransparency = Toggled and 0 or 0.3}):Play()
+            TweenService:Create(outerFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),{BackgroundTransparency = Toggled and 0 or 0.75}):Play()
         end)
 
         return insidetoggle
@@ -633,7 +633,7 @@ function library:Window(Info)
         local dropdown = Instance.new("Frame")
         dropdown.Name = "Dropdown"
         dropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdown.BackgroundTransparency = 0.3
+        dropdown.BackgroundTransparency = 0.75
         dropdown.Size = UDim2.fromOffset(225, 38)
         dropdown.Parent = itemContainer
 
@@ -646,7 +646,7 @@ function library:Window(Info)
         dropdownFixLine.Name = "DropdownFixLine"
         dropdownFixLine.AnchorPoint = Vector2.new(0.5, 1)
         dropdownFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdownFixLine.BackgroundTransparency = 0.3
+        dropdownFixLine.BackgroundTransparency = 0.75
         dropdownFixLine.BorderSizePixel = 0
         dropdownFixLine.Position = UDim2.fromScale(0.5, 0.04)
         dropdownFixLine.ZIndex = 2
@@ -692,7 +692,7 @@ function library:Window(Info)
         dropdownContainerBackground.Visible = true
         dropdownContainerBackground.Name = "DropdownContainerBackground"
         dropdownContainerBackground.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdownContainerBackground.BackgroundTransparency = 0.3
+        dropdownContainerBackground.BackgroundTransparency = 0.75
         dropdownContainerBackground.BorderSizePixel = 0
         dropdownContainerBackground.Position = UDim2.fromScale(0, 1)
         dropdownContainerBackground.Size = UDim2.fromOffset(225, 0)
@@ -704,7 +704,7 @@ function library:Window(Info)
         dropdownFixLine1.Name = "DropdownFixLine"
         dropdownFixLine1.AnchorPoint = Vector2.new(0.5, 0)
         dropdownFixLine1.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdownFixLine1.BackgroundTransparency = 0.3
+        dropdownFixLine1.BackgroundTransparency = 0.75
         dropdownFixLine1.BorderSizePixel = 0
         dropdownFixLine1.Position = UDim2.new(0.5, 0, 0, -2)
         dropdownFixLine1.Size = UDim2.fromOffset(225, 4)
@@ -735,16 +735,16 @@ function library:Window(Info)
 
         dropdown.MouseEnter:Connect(function()
             dropdownFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            dropdownFixLine.BackgroundTransparency = 0.3
+            dropdownFixLine.BackgroundTransparency = 0.75
             dropdown.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            dropdown.BackgroundTransparency = 0.3
+            dropdown.BackgroundTransparency = 0.75
         end)
 
         dropdown.MouseLeave:Connect(function()
             dropdownFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            dropdownFixLine.BackgroundTransparency = 0.3
+            dropdownFixLine.BackgroundTransparency = 0.75
             dropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            dropdown.BackgroundTransparency = 0.3
+            dropdown.BackgroundTransparency = 0.75
         end)
 
         local Opened = false
@@ -768,7 +768,7 @@ function library:Window(Info)
             local buttonDropdown = Instance.new("Frame")
             buttonDropdown.Name = "ButtonDropdown"
             buttonDropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            buttonDropdown.BackgroundTransparency = 0.3
+            buttonDropdown.BackgroundTransparency = 0.75
             buttonDropdown.Size = UDim2.fromOffset(225, 27)
             buttonDropdown.ZIndex = 3
             buttonDropdown.Parent = dropdownContainer
@@ -807,12 +807,12 @@ function library:Window(Info)
 
             buttonDropdown.MouseEnter:Connect(function()
                 buttonDropdown.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-                buttonDropdown.BackgroundTransparency = 0.3
+                buttonDropdown.BackgroundTransparency = 0.75
             end)
 
             buttonDropdown.MouseLeave:Connect(function()
                 buttonDropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-                buttonDropdown.BackgroundTransparency = 0.3
+                buttonDropdown.BackgroundTransparency = 0.75
             end)
 
             WindowOpened:GetPropertyChangedSignal("Value"):Connect(function()
@@ -864,7 +864,7 @@ function library:Window(Info)
         local keybind = Instance.new("Frame")
         keybind.Name = "Keybind"
         keybind.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        keybind.BackgroundTransparency = 0.3
+        keybind.BackgroundTransparency = 0.75
         keybind.Size = UDim2.fromOffset(225, 38)
         keybind.Parent = itemContainer
 
@@ -877,7 +877,7 @@ function library:Window(Info)
         keybindFixLine.Name = "KeybindFixLine"
         keybindFixLine.AnchorPoint = Vector2.new(0.5, 1)
         keybindFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        keybindFixLine.BackgroundTransparency = 0.3
+        keybindFixLine.BackgroundTransparency = 0.75
         keybindFixLine.BorderSizePixel = 0
         keybindFixLine.Position = UDim2.fromScale(0.5, 0.0526)
         keybindFixLine.Size = UDim2.fromOffset(225, 4)
@@ -920,7 +920,7 @@ function library:Window(Info)
         keybindHolder.Name = "KeybindHolder"
         keybindHolder.AnchorPoint = Vector2.new(1, 0.5)
         keybindHolder.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-        keybindHolder.BackgroundTransparency = 0.3
+        keybindHolder.BackgroundTransparency = 0.75
         keybindHolder.BorderSizePixel = 0
         keybindHolder.Position = UDim2.fromScale(1, 0.5)
         keybindHolder.Size = UDim2.fromOffset(38, 17)
@@ -944,16 +944,16 @@ function library:Window(Info)
 
         keybind.MouseEnter:Connect(function()
             keybindFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            keybindFixLine.BackgroundTransparency = 0.3
+            keybindFixLine.BackgroundTransparency = 0.75
             keybind.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            keybind.BackgroundTransparency = 0.3
+            keybind.BackgroundTransparency = 0.75
         end)
 
         keybind.MouseLeave:Connect(function()
             keybindFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            keybindFixLine.BackgroundTransparency = 0.3
+            keybindFixLine.BackgroundTransparency = 0.75
             keybind.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            keybind.BackgroundTransparency = 0.3
+            keybind.BackgroundTransparency = 0.75
         end)
 
         local TextBounds = keybindText.TextBounds
@@ -1021,7 +1021,7 @@ function library:Window(Info)
         local slider = Instance.new("Frame")
         slider.Name = "Slider"
         slider.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        slider.BackgroundTransparency = 0.3
+        slider.BackgroundTransparency = 0.75
         slider.Size = UDim2.fromOffset(225, 38)
         slider.Parent = itemContainer
 
@@ -1034,7 +1034,7 @@ function library:Window(Info)
         sliderFixLine.Name = "SliderFixLine"
         sliderFixLine.AnchorPoint = Vector2.new(0.5, 1)
         sliderFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        sliderFixLine.BackgroundTransparency = 0.3
+        sliderFixLine.BackgroundTransparency = 0.75
         sliderFixLine.BorderSizePixel = 0
         sliderFixLine.Position = UDim2.fromScale(0.5, 0.0526)
         sliderFixLine.Size = UDim2.fromOffset(225, 4)
@@ -1064,7 +1064,7 @@ function library:Window(Info)
         local outerSlider = Instance.new("Frame")
         outerSlider.Name = "OuterSlider"
         outerSlider.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-        outerSlider.BackgroundTransparency = 0.3
+        outerSlider.BackgroundTransparency = 0.75
         outerSlider.BorderSizePixel = 0
         outerSlider.Position = UDim2.fromScale(-0.001, 0.458)
         outerSlider.Size = UDim2.new(1, 0, 0, 4)
@@ -1130,16 +1130,16 @@ function library:Window(Info)
 
         slider.MouseEnter:Connect(function()
             sliderFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            sliderFixLine.BackgroundTransparency = 0.3
+            sliderFixLine.BackgroundTransparency = 0.75
             slider.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            slider.BackgroundTransparency = 0.3
+            slider.BackgroundTransparency = 0.75
         end)
 
         slider.MouseLeave:Connect(function()
             sliderFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            sliderFixLine.BackgroundTransparency = 0.3
+            sliderFixLine.BackgroundTransparency = 0.75
             slider.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            slider.BackgroundTransparency = 0.3
+            slider.BackgroundTransparency = 0.75
         end)
 
         local MinSize = 0
@@ -1179,7 +1179,7 @@ function library:Window(Info)
     fixLine2.Name = "FixLine"
     fixLine2.AnchorPoint = Vector2.new(0.5, 1)
     fixLine2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-    fixLine2.BackgroundTransparency = 0.3
+    fixLine2.BackgroundTransparency = 0.75
     fixLine2.BorderSizePixel = 0
     fixLine2.Position = UDim2.fromScale(0.5, 1)
     fixLine2.Size = UDim2.fromOffset(225, 2)
