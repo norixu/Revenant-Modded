@@ -519,7 +519,7 @@ function library:Window(Info)
         fixLineToggle.Name = "FixLine"
         fixLineToggle.AnchorPoint = Vector2.new(0.5, 1)
         fixLineToggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        fixLineToggle.BackgroundTransparency = 0.8
+        fixLineToggle.BackgroundTransparency = 0.5
         fixLineToggle.BorderSizePixel = 0
         fixLineToggle.Position = UDim2.fromScale(0.5, 0.0526)
         fixLineToggle.Size = UDim2.fromOffset(225, 4)
@@ -582,14 +582,14 @@ function library:Window(Info)
 
         toggle.MouseEnter:Connect(function()
             fixLineToggle.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            fixLineToggle.BackgroundTransparency = 0.8
+            fixLineToggle.BackgroundTransparency = 0.5
             toggle.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
             toggle.BackgroundTransparency = 0.8
         end)
 
         toggle.MouseLeave:Connect(function()
             fixLineToggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            fixLineToggle.BackgroundTransparency = 0.8
+            fixLineToggle.BackgroundTransparency = 0.5
             toggle.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
             toggle.BackgroundTransparency = 0.8
         end)
@@ -633,7 +633,7 @@ function library:Window(Info)
         local dropdown = Instance.new("Frame")
         dropdown.Name = "Dropdown"
         dropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdown.BackgroundTransparency = 0.8
+        dropdown.BackgroundTransparency = 0.5
         dropdown.Size = UDim2.fromOffset(225, 38)
         dropdown.Parent = itemContainer
 
@@ -646,7 +646,7 @@ function library:Window(Info)
         dropdownFixLine.Name = "DropdownFixLine"
         dropdownFixLine.AnchorPoint = Vector2.new(0.5, 1)
         dropdownFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        dropdownFixLine.BackgroundTransparency = 0.8
+        dropdownFixLine.BackgroundTransparency = 0.5
         dropdownFixLine.BorderSizePixel = 0
         dropdownFixLine.Position = UDim2.fromScale(0.5, 0.04)
         dropdownFixLine.ZIndex = 2
@@ -735,16 +735,16 @@ function library:Window(Info)
 
         dropdown.MouseEnter:Connect(function()
             dropdownFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            dropdownFixLine.BackgroundTransparency = 0.8
+            dropdownFixLine.BackgroundTransparency = 0.5
             dropdown.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            dropdown.BackgroundTransparency = 0.8
+            dropdown.BackgroundTransparency = 0.5
         end)
 
         dropdown.MouseLeave:Connect(function()
             dropdownFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            dropdownFixLine.BackgroundTransparency = 0.8
+            dropdownFixLine.BackgroundTransparency = 0.5
             dropdown.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            dropdown.BackgroundTransparency = 0.8
+            dropdown.BackgroundTransparency = 0.5
         end)
 
         local Opened = false
@@ -1021,7 +1021,7 @@ function library:Window(Info)
         local slider = Instance.new("Frame")
         slider.Name = "Slider"
         slider.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        slider.BackgroundTransparency = 0.8
+        slider.BackgroundTransparency = 0.5
         slider.Size = UDim2.fromOffset(225, 38)
         slider.Parent = itemContainer
 
@@ -1034,7 +1034,7 @@ function library:Window(Info)
         sliderFixLine.Name = "SliderFixLine"
         sliderFixLine.AnchorPoint = Vector2.new(0.5, 1)
         sliderFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-        sliderFixLine.BackgroundTransparency = 0.8
+        sliderFixLine.BackgroundTransparency = 0.5
         sliderFixLine.BorderSizePixel = 0
         sliderFixLine.Position = UDim2.fromScale(0.5, 0.0526)
         sliderFixLine.Size = UDim2.fromOffset(225, 4)
@@ -1130,16 +1130,16 @@ function library:Window(Info)
 
         slider.MouseEnter:Connect(function()
             sliderFixLine.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            sliderFixLine.BackgroundTransparency = 0.8
+            sliderFixLine.BackgroundTransparency = 0.5
             slider.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-            slider.BackgroundTransparency = 0.8
+            slider.BackgroundTransparency = 0.5
         end)
 
         slider.MouseLeave:Connect(function()
             sliderFixLine.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            sliderFixLine.BackgroundTransparency = 0.8
+            sliderFixLine.BackgroundTransparency = 0.5
             slider.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-            slider.BackgroundTransparency = 0.8
+            slider.BackgroundTransparency = 0.5
         end)
 
         local MinSize = 0
