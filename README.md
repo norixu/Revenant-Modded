@@ -213,7 +213,7 @@ Revenant:Window({ Text = "Hello" })
 # Notes
 
 • Designed for exploit's or local UI environments  
-
+• This is Open Source But please put Creduts pleae and Thank you!
 ---
 
 # GitHub
